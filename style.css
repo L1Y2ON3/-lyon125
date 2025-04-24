@@ -1,0 +1,102 @@
+body{
+   font-family:sans-serif;
+   margin: 0%;
+   background: #eee;
+   height: auto;
+}
+h1{
+   font-weight: 400;
+   font-size:2.5rem;
+   text-transform: uppercase;
+   margin: 0%;
+}
+h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0%;
+
+}
+img{
+   display: block;
+   width: 100%;
+   align-items: center;
+}
+main{
+   max-width: 900px;
+   margin: auto;
+   box-shadow:30px 0px 40px rgba(red 0, green 0, blue 0, alpha 0.1),
+   -30px 0px 40px rgba(red 0, green 0, blue 0, alpha 0.1);
+}
+
+#landing{
+   background:#fff;
+   text-align: center;
+   
+}
+#landing text {
+   display: flexbox;
+   flex: 0 1 40vw;
+   height: 50vh;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   padding-right: 1rem;
+   padding-left: 1rem;
+
+}
+#landing-text h2{
+   color: #888;
+}
+#landing-image{
+   background: url(lion.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50vh;
+   flex: 0 1 60vw;
+   margin: 5;
+}
+.btn{
+   padding: 0.5rem 2rem;
+   border: 1px #ccc solid;
+   display: inline-block;
+   margin: 1rem  1rem;
+   border-radius: 50px;
+   text-decoration: none;
+   color: #333;
+   transition: ease;
+}
+
+.btn:hover{
+   background-color: #f4f4f4;
+}
+#header{
+   padding: 1.5rem;
+   text-align: center;
+   background:#333 ;
+   color: #fff;
+}
+#header h2{
+   border-left: dotted 1px #fff;
+   border-right:dotted 1px #fff ;
+   display: inline-block;
+   padding-left:1rem ;
+   padding-right: 1rem;
+
+}
+.caption{
+   padding: 0.8 rem;
+   text-align: center;
+}
+footer{
+   text-align: center;
+   padding: 2rem 1rem;
+   margin: auto;
+   color: #333;
+}
+footer h3{
+   font-size: 3rem;
+   margin-bottom: 0;
+}
+
