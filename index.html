@@ -1,59 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photograph website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="greg.css">
 </head>
 <body>
-    <main>
-        <div id="landing">
-            <div id="landing text">
-                <div id="landing-text-inner">
-                    <h1>Photography page</h1>
-                    <h2>Gregory Muhia</h2>
-                    <a href="#images" class="btn" id="view-work">view-work
+    <header>
+        <h1>My Photography Website</h1>
+        <nav>
+            <a href="#" class="filter" data-category="all">All</a>
+            <a href="#" class="filter" data-category="nature">Nature</a>
+            <a href="#" class="filter" data-category="urban">Urban</a>
+            <a href="#" class="filter" data-category="portrait">Portrait</a>
+        </nav>
+    </header>
 
-                    </a>
-                </div>
-            </div>
-            <div id="landing-image"></div>
-         </div>
-         <div id="image">
-            <div id="header">
-                <h2>Our work</h2>
-            </div>
-            <img src="bear.webp" alt="">
-            <div class="caption">
-                <h3>Bear</h3>
-                <p>Photograph of a polar bear busking in the sun surronded by beautiful purple flowers.</p>
-            </div>
-            <img src="leopard.jpg" alt="">
-            <div class="caption">
-                <h3>Snow leopard</h3>
-                <p>Photograph of a snow leopard casualing roaming around the mountains covered with snow</p>
-         </div>
-         <img src="monkey.webp" alt="">
-            <div class="caption">
-                <h3>Monkey</h3>
-                <p>Two monkey fused in nature wonderful looks feeding there young one </p>
-            </div>
-            <img src="cheetah.webp" alt="">
-            <div class="caption">
-                <h3>cheetah</h3>
-            <p> A leopard casualy relaxing after devouring a waterbuck </p>
-            </div>
-        </main>
-        <footer>
-            <h3>Get in touch</h3>
-            <p>Emain or call us</p>
-            <p>Email:
-            <strong>gregory@gmail.com</strong>
-            <p>Phone:
-            <strong>0701510629</strong>
-               </p>  
-            </p>
-        </footer>
-    
+    <section class="gallery">
+        <div class="photo" data-category="nature">
+            <img src="leopard.jpg" alt="Nature Photo 1">
+        </div>
+        <div class="photo" data-category="nature">
+            <img src="lion.jpg" alt="Nature Photo 1">
+        </div>
+        <div class="photo" data-category="nature">
+            <img src="bear.webp" alt="Nature Photo 2">
+        </div>
+        <div class="photo"data-category="nature">
+            <img src="landscape.jpg" alt="Nature Photo 3">
+        </div>
+        <div class="photo"data-category="nature">
+            <img src="scens.jpg" alt="Nature Photo 3">
+
+        </div>
+        <div class="photo"data-category="nature">
+            <img src="mountain.jpg" alt="Nature Photo 4">
+
+        </div>
+        <div class="photo"data-category="nature">
+            <img src="potrait1.webp" alt="Potrait Photo 1">
+
+        </div>
+        <div class="photo"data-category="potrait">
+            <img src="potrait2.webp" alt="Potrait Photo 2 ">
+
+        </div>
+        
+    </section>
+
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <footer>
+        <h3>Get in touch</h3>
+        <p>Email or call us</p>
+        <p>Email:
+        <strong>gregory@gmail.com</strong>
+        <p>Phone:
+        <strong>0701510629</strong>
+           </p>  
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
