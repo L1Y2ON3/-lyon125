@@ -1,36 +1,52 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-          <div>
-            <h1>Akan name generator</h1>
-            <div>
-              <p>
-                <label>Enter Gender</label>
-                <select required value="male" id="gender_input">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </p>
-              <p>
-                <label>Date Of Birth</label>
-                <input required type="date" id="date_input" />
-              </p>
-            </div>
-            <div>
-              <button onclick="submitForm()">Submit</button>
-            </div>
-          </div>
-          <div>Your Akan name is <b id="akan_name"></b></div>
-          <script src="script.js"></script>
-  
-      </body>
-    </html>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers </title>
+    <link rel="stylesheet" href="greg.css">
+    <link rel="icon" href="@wallandiadesk.jpg">
+</head>
+<body>
+    <header>
+    <h1>CAR WALLPAPER</h1>
+    <nav>
+      <a href="#" class="filter" data-category="all">All</a>
+      <a href="#" class="filter"  data-category="classics">Classics</a>
+      <a href="#" class="filter"  data-category="modern">Modern</a>
+    </nav>
+</header>
+<section class="gallery">
+    <div class="photo" data-category="classics">
+        <img src="classic6.jpg" alt="Classics Photo 1">
+    </div>
+    <div class="photo" data-category="classics">
+        <img src="1970 ford mustang 2.jpg" alt="Classics Photo 2">
+    </div>
+    <div class="photo" data-category="classics">
+        <img src="classic4.jpg" alt="Classics Photo 3">
+    </div>
+    <div class="photo" data-category="modern">
+        <img src="rsq81.jpg" alt="Modern Photo 1">
+    </div>
+    <div class="photo" data-category="modern">
+        <img src="rsq8.jpg" alt="Modern Photo 2">
+    </div>
+    <div class="photo" data-category="modern">
+        <img src="audi a5.jpg" alt="Modern Photo 3">
+    </div>
+   </section>
+   <div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+    
+       
 
+    
+  <script src="script.js">
+
+  </script>
+    
+</body>
+</html>
